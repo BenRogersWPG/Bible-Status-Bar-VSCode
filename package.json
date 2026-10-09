@@ -1,6 +1,7 @@
 {
 	"name": "bible-verse-statusbar",
 	"displayName": "Bible Verse Status Bar",
+	"icon": "images/icon.webp",
 	"description": "Shows a random Bible verse in the VS Code status bar and which changes over time.",
 	"version": "0.0.1",
 	"publisher": "BenRogersWPG",

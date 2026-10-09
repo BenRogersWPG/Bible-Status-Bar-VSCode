@@ -1,8 +1,8 @@
-# Bible Verse Status Bar
+# Bible Verse Status Bar ✝
 
 Shows a random Bible verse in the VS Code status bar and which changes over time.
 
-## Features
+## Features ✨
 
 - Displays a Bible verse in the VS Code status bar.
 - Shows the full verse in the tooltip when you hover over the status bar item.
@@ -17,11 +17,11 @@ Shows a random Bible verse in the VS Code status bar and which changes over time
   - `bibleVerse.bibleId` (default: `3034`, Berean Standard Bible): enter a YouVersion Bible ID from the [YouVersion API documentation](https://developers.youversion.com/docs). If the ID is invalid or unavailable, the extension tries Bible ID `3034` (Berean Standard Bible) before using bundled sample verses.
   - `bibleVerse.showBibleVersionInTooltip` (default: `true`): include the Bible version abbreviation in parentheses after the verse reference in the status bar hover tooltip.
 
-## Configuration
+### Configuration ⚙️
 
 Open Settings and search for `Bible Verse Status Bar` to change the behavior.
 
-## Getting Started
+## Getting Started 👇
 
 1. Create or sign in to your account on the [YouVersion Platform](https://platform.youversion.com/).
 2. Register your application in the platform portal and follow the [API Usage guide](https://developers.youversion.com/api-usage) to obtain an App Key. Make sure the Bible version you want to use is available to your application; some versions may require accepting a license agreement.
