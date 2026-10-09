@@ -1,6 +1,6 @@
 # Bible Verse Status Bar ✝
 
-Shows a random Bible verse in the VS Code status bar and which changes over time.
+Shows a random Bible verse in the VS Code status bar, which changes over time.
 
 ## Features ✨
 
