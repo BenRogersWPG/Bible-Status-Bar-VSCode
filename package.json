@@ -170,7 +170,7 @@
 	},
 	"devDependencies": {
 		"@eslint/js": "^9.13.0",
-		"@stylistic/eslint-plugin": "^2.9.0",
+		"@stylistic/eslint-plugin": "^5.10.0",
 		"@types/vscode": "^1.100.0",
 		"eslint": "^9.13.0",
 		"typescript": "^5.9.2",
