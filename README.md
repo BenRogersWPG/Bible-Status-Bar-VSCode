@@ -1,6 +1,6 @@
 # Bible Verse Status Bar
 
-This extension adds a configurable status bar item that shows a Bible verse and exposes the full verse in a tooltip.
+Shows a random Bible verse in the VS Code status bar and which changes over time.
 
 ## Features
 
@@ -21,11 +21,17 @@ This extension adds a configurable status bar item that shows a Bible verse and 
 
 Open Settings and search for `Bible Verse Status Bar` to change the behavior.
 
-Run the command `Bible Verse: Store YouVersion App Key` from the Command Palette to save your YouVersion app key securely in VS Code. If the key is empty or the request fails, the extension falls back to the bundled sample verses.
+## Getting Started
 
-## Notes
+1. Create or sign in to your account on the [YouVersion Platform](https://platform.youversion.com/).
+2. Register your application in the platform portal and follow the [API Usage guide](https://developers.youversion.com/api-usage) to obtain an App Key. Make sure the Bible version you want to use is available to your application; some versions may require accepting a license agreement.
+3. In VS Code, open the Command Palette with `Ctrl+Shift+P` on Windows/Linux or `Cmd+Shift+P` on macOS.
+4. Run `Bible Verse: Store YouVersion App Key`.
+5. Paste your App Key into the password-style input prompt and press Enter. The extension stores it in VS Code SecretStorage and uses it in requests to the YouVersion API.
 
-The extension now uses the YouVersion Bible API when an app key is provided, and it will fall back to the bundled verses otherwise.
+Use your own App Key for your registered application. Keep it private and do not commit it to a repository or share it publicly. To replace or remove the saved key, run `Bible Verse: Store YouVersion App Key` again or run `Bible Verse: Clear YouVersion App Key` from the Command Palette.
+
+If the key is missing, invalid, or the API request fails, the extension displays one of its bundled sample verses instead. The default Bible ID is `3034` (Berean Standard Bible); you can change it in Settings if your application has access to another version.
 
 ## VS Code API
 

@@ -44,18 +44,18 @@ const defaultBibleId = '3034';
 const fallbackBibleId = '3034';
 
 const versePool: VerseSelection[] = [
-	{ passageId: 'JHN.3.16', reference: 'John 3:16', fallbackText: 'For God so loved the world, that he gave his only begotten Son, that whosoever believeth in him should not perish, but have everlasting life.' },
+	{ passageId: 'JHN.3.16', reference: 'John 3:16', fallbackText: 'For God so loved the world that He gave His one and only Son, that everyone who believes in Him shall not perish but have eternal life.' },
 	{ passageId: 'PSA.23.1', reference: 'Psalm 23:1', fallbackText: 'The Lord is my shepherd; I shall not want.' },
-	{ passageId: 'PRO.3.5', reference: 'Proverbs 3:5-6', fallbackText: 'Trust in the Lord with all thine heart; and lean not unto thine own understanding. In all thy ways acknowledge him, and he shall direct thy paths.' },
-	{ passageId: 'ROM.8.28', reference: 'Romans 8:28', fallbackText: 'And we know that all things work together for good to them that love God, to them who are the called according to his purpose.' },
-	{ passageId: 'PHP.4.13', reference: 'Philippians 4:13', fallbackText: 'I can do all things through Christ which strengthens me.' },
-	{ passageId: 'ISA.40.31', reference: 'Isaiah 40:31', fallbackText: 'But they that wait upon the Lord shall renew their strength; they shall mount up with wings as eagles; they shall run, and not be weary; and they shall walk, and not faint.' },
-	{ passageId: 'JOS.1.9', reference: 'Joshua 1:9', fallbackText: 'Be strong and of a good courage; be not afraid, neither be thou dismayed: for the Lord thy God is with thee whithersoever thou goest.' },
-	{ passageId: 'HEB.11.1', reference: 'Hebrews 11:1', fallbackText: 'Now faith is the substance of things hoped for, the evidence of things not seen.' },
-	{ passageId: '1CO.16.14', reference: '1 Corinthians 16:14', fallbackText: 'Let all your things be done with charity.' },
-	{ passageId: 'MAT.6.33', reference: 'Matthew 6:33', fallbackText: 'But seek ye first the kingdom of God, and his righteousness; and all these things shall be added unto you.' },
-	{ passageId: 'PSA.46.10', reference: 'Psalm 46:10', fallbackText: 'Be still, and know that I am God.' },
-	{ passageId: 'ROM.12.2', reference: 'Romans 12:2', fallbackText: 'And be not conformed to this world: but be ye transformed by the renewing of your mind.' }
+	{ passageId: 'PRO.3.5', reference: 'Proverbs 3:5-6', fallbackText: 'Trust in the Lord with all your heart, and lean not on your own understanding; in all your ways acknowledge Him, and He will make your paths straight.' },
+	{ passageId: 'ROM.8.28', reference: 'Romans 8:28', fallbackText: 'And we know that God works all things together for the good of those who love Him, who are called according to His purpose. ' },
+	{ passageId: 'PHP.4.13', reference: 'Philippians 4:13', fallbackText: 'I can do all things through Christ who gives me strength.' },
+	{ passageId: 'ISA.40.31', reference: 'Isaiah 40:31', fallbackText: 'But those who wait upon the Lord will renew their strength; they will mount up with wings like eagles; they will run and not grow weary, they will walk and not faint.' },
+	{ passageId: 'JOS.1.9', reference: 'Joshua 1:9', fallbackText: 'Have I not commanded you to be strong and courageous? Do not be afraid; do not be discouraged, for the Lord your God is with you wherever you go.' },
+	{ passageId: 'HEB.11.1', reference: 'Hebrews 11:1', fallbackText: 'Now faith is the assurance of what we hope for and the certainty of what we do not see.' },
+	{ passageId: '1CO.16.14', reference: '1 Corinthians 16:14', fallbackText: 'Do everything in love.' },
+	{ passageId: 'MAT.6.33', reference: 'Matthew 6:33', fallbackText: 'But seek first the kingdom of God and His righteousness, and all these things will be added unto you. ' },
+	{ passageId: 'PSA.46.10', reference: 'Psalm 46:10', fallbackText: 'Be still and know that I am God; I will be exalted among the nations, I will be exalted over the earth.' },
+	{ passageId: 'ROM.12.2', reference: 'Romans 12:2', fallbackText: 'All who sin apart from the law will also perish apart from the law, and all who sin under the law will be judged by the law.' }
 ];
 
 let statusBarItem: vscode.StatusBarItem;
