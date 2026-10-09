@@ -1,0 +1,179 @@
+{
+	"name": "bible-verse-statusbar",
+	"displayName": "Bible Verse Status Bar",
+	"description": "Shows a random Bible verse in the VS Code status bar and which changes over time.",
+	"version": "0.0.1",
+	"publisher": "BenRogersWPG",
+	"author": {
+		"name": "Ben Rogers"
+	},
+	"homepage": "https://github.com/BenRogersWPG/Bible-Status-Bar-VSCode/blob/master/README.md",
+	"license": "SEE LICENSE IN LICENSE.md",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/BenRogersWPG/Bible-Status-Bar-VSCode"
+	},
+	"bugs": "https://github.com/BenRogersWPG/Bible-Status-Bar-VSCode/issues",
+	"sponsor": {
+		"url": "https://github.com/sponsors/BenRogersWPG"
+	},
+	"engines": {
+		"vscode": "^1.100.0"
+	},
+	"galleryBanner": {
+		"color": "#1A1A1E",
+		"theme": "dark"
+	},
+	"categories": [
+		"Other"
+	],
+	"keywords": [
+		"Bible",
+		"Status Bar",
+		"Statusbar",
+		"UI",
+		"Random",
+		"YouVersion",
+		"Scripture"
+	],
+	"extensionKind": [
+		"workspace",
+		"ui"
+	],
+	"activationEvents": [
+		"onStartupFinished"
+	],
+	"main": "./out/extension.js",
+	"contributes": {
+		"commands": [
+			{
+				"command": "bibleVerse.refreshVerse",
+				"title": "Bible Verse: Refresh Current Verse"
+			},
+			{
+				"command": "bibleVerse.showVerse",
+				"title": "Bible Verse: Show Current Verse"
+			},
+			{
+				"command": "bibleVerse.setAppKey",
+				"title": "Bible Verse: Store YouVersion App Key"
+			},
+			{
+				"command": "bibleVerse.clearAppKey",
+				"title": "Bible Verse: Clear YouVersion App Key"
+			}
+		],
+		"configuration": [
+			{
+				"title": "User Interface",
+				"order": 1,
+				"type": "object",
+				"properties": {
+					"bibleVerse.showBibleVersionInTooltip": {
+						"type": "boolean",
+						"default": true,
+						"description": "Show the Bible version abbreviation in parentheses in the status bar hover tooltip."
+					},
+					"bibleVerse.shrinkToFit": {
+						"type": "boolean",
+						"default": true,
+						"description": "Use only the space needed by the verse when it is shorter than the configured status bar width."
+					},
+					"bibleVerse.statusBarWidth": {
+						"type": "integer",
+						"default": 200,
+						"minimum": 40,
+						"description": "Approximate width reserved for the status bar item."
+					},
+					"bibleVerse.displayFullVerse": {
+						"type": "boolean",
+						"default": true,
+						"description": "Display the full verse text in the status bar. Turn this off to show just the verse reference (for example: Hebrews 2:4)."
+					}
+				}
+			},
+			{
+				"title": "Bible Version",
+				"order": 2,
+				"type": "object",
+				"properties": {
+					"bibleVerse.bibleId": {
+						"type": "string",
+						"default": "3034",
+						"markdownDescription": "The YouVersion Bible ID to request passages from, for example `3034` for the Berean Standard Bible. [Browse available Bible versions](https://www.bible.com/languages/eng). If this ID is invalid or unavailable, the extension tries Bible ID `3034` (Berean Standard Bible)."
+					}
+				}
+			},
+			{
+				"title": "Refresh Mode",
+				"order": 3,
+				"type": "object",
+				"properties": {
+					"bibleVerse.randomOrSequential": {
+						"type": "string",
+						"enum": [
+							"random",
+							"sequential"
+						],
+						"default": "random",
+						"description": "Display a random verse or advance to the next verse in sequence."
+					},
+					"bibleVerse.refreshFrequency": {
+						"type": "integer",
+						"default": 60,
+						"minimum": 1,
+						"description": "Minutes between automatic verse refreshes. Used only when Refresh Mode is set to Schedule."
+					},
+					"bibleVerse.refreshMode": {
+						"type": "string",
+						"enum": [
+							"onVSCodeOpen",
+							"schedule"
+						],
+						"enumItemLabels": [
+							"On VS Code Open",
+							"Schedule"
+						],
+						"markdownEnumDescriptions": [
+							"Refresh the verse when VS Code opens, with no automatic updates while it remains open.",
+							"Refresh the verse periodically using the Refresh Frequency setting."
+						],
+						"default": "onVSCodeOpen",
+						"description": "Choose whether verses refresh only when VS Code opens or periodically."
+					},
+					"bibleVerse.clickAction": {
+						"type": "string",
+						"enum": [
+							"showVerse",
+							"newRandomVerse"
+						],
+						"enumItemLabels": [
+							"Display Full Verse",
+							"Show New Random Verse"
+						],
+						"markdownEnumDescriptions": [
+							"Show the current verse in a notification.",
+							"Replace the current verse with a new random verse when clicked."
+						],
+						"default": "showVerse",
+						"markdownDescription": "Choose what happens when the status bar item is clicked."
+					}
+				}
+			}
+		]
+	},
+	"scripts": {
+		"vscode:prepublish": "npm run compile",
+		"compile": "tsc -p ./",
+		"lint": "eslint",
+		"watch": "tsc -watch -p ./"
+	},
+	"devDependencies": {
+		"@eslint/js": "^9.13.0",
+		"@stylistic/eslint-plugin": "^2.9.0",
+		"@types/vscode": "^1.100.0",
+		"eslint": "^9.13.0",
+		"typescript": "^5.9.2",
+		"typescript-eslint": "^8.39.0"
+	}
+}
