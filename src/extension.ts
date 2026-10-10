@@ -206,7 +206,7 @@ async function getNextVerse(mode: VerseMode, forceRefresh: boolean, forceRandom:
 	const fallbackVerse = {
 		reference: selection.reference,
 		text: selection.fallbackText,
-		bibleVersionAbbreviation: 'KJV'
+		bibleVersionAbbreviation: 'BSB'
 	};
 
 	if (!appKey) {
