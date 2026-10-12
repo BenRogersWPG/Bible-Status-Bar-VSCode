@@ -20,7 +20,7 @@ If you are interested in following along with the code updates, please see the [
 
 ### Reviews 🌟
 
-If you have been enjoying this extension and wish to show your thanks, feel free to [leave a review](https://marketplace.visualstudio.com/items?itemName=BenRogersWPG.Bible-Status-Bar-VSCode&ssr=false#review-details) on the extension page.
+If you have been enjoying this extension and wish to show your thanks, feel free to [leave a review](https://marketplace.visualstudio.com/items?itemName=BenRogersWPG.bible-verse-statusbar&ssr=false#review-details) on the extension page.
 
 *Thanks so much!*
 -Ben
