@@ -186,7 +186,7 @@
 		"@stylistic/eslint-plugin": "^5.10.0",
 		"@types/vscode": "^1.140.0",
 		"eslint": "^9.13.0",
-		"typescript": "^5.9.2",
+		"typescript": "^7.0.2",
 		"typescript-eslint": "^8.71.2"
 	}
 }
