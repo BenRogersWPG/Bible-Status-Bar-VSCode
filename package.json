@@ -187,6 +187,6 @@
 		"@types/vscode": "^1.146.0",
 		"eslint": "^10.15.0",
 		"typescript": "^7.0.2",
-		"typescript-eslint": "^8.72.2"
+		"typescript-eslint": "^8.73.0"
 	}
 }
